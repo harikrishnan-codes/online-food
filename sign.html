@@ -1,0 +1,159 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Savoria - Fine Dining Restaurant">
+    <title>Stackly</title>
+    <link rel="icon" href="./Assets/bg remove.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./sign.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <section class="auth-section">
+        <div class="auth-container reveal-up active">
+            <div class="auth-card" id="loginCard">
+                <h2 class="auth-title">Welcome Back<span>.</span></h2>
+                <p class="auth-subtitle">Enter your details to access your profile</p>
+
+                <form id="loginForm" class="js-form">
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" id="loginEmail" placeholder="name@example.com" required>
+                        <span class="error-msg">Please enter a valid email</span>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" class="js-password" id="loginPass" placeholder="••••••••" required>
+                            <i class="fas fa-eye-slash toggle-password"></i>
+                        </div>
+                    </div>
+
+                    <div class="auth-meta">
+                        <a href="#" class="link-btn small-text" id="toForgot">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                </form>
+                <p class="auth-switch">Don't have an account? <a href="#" id="toSignUp">Sign Up</a></p>
+            </div>
+
+            <div class="auth-card hidden" id="signUpCard">
+                <h2 class="auth-title">Create Account<span>.</span></h2>
+                <form id="signUpForm" class="js-form">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" id="regName" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" id="regEmail" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" class="js-password" id="regPass" required>
+                            <i class="fas fa-eye-slash toggle-password"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                </form>
+                <p class="auth-switch">Already a member? <a href="#" id="toLogin">Login</a></p>
+            </div>
+
+            <div class="auth-card hidden" id="forgotCard">
+                <h2 class="auth-title">Reset<span>.</span></h2>
+                <p class="auth-subtitle">Enter your email to receive a reset link</p>
+                <form id="forgotForm" class="js-form">
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" id="forgotEmail" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Reset Link</button>
+                </form>
+                <p class="auth-switch"><a href="#" id="backToLogin">Back to Login</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+
+    <script>
+
+
+
+        //signup js 
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = {
+                login: document.getElementById('loginCard'),
+                signup: document.getElementById('signUpCard'),
+                forgot: document.getElementById('forgotCard')
+            };
+
+            document.getElementById('toSignUp').onclick = () => switchCard('signup');
+            document.getElementById('toLogin').onclick = () => switchCard('login');
+            document.getElementById('toForgot').onclick = () => switchCard('forgot');
+            document.getElementById('backToLogin').onclick = () => switchCard('login');
+
+            function switchCard(key) {
+                Object.values(cards).forEach(c => c.classList.add('hidden'));
+                cards[key].classList.remove('hidden');
+            }
+
+             document.querySelectorAll('.toggle-password').forEach(eye => {
+                eye.addEventListener('click', function () {
+                    const input = this.previousElementSibling;
+                    if (input.type === "password") {
+                        input.type = "text";
+                        this.classList.replace('fa-eye-slash', 'fa-eye');
+                    } else {
+                        input.type = "password";
+                        this.classList.replace('fa-eye', 'fa-eye-slash');
+                    }
+                });
+            });
+
+             const forms = document.querySelectorAll('.js-form');
+
+            forms.forEach(form => {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                     let isValid = true;
+                    const inputs = form.querySelectorAll('input[required]');
+
+                    inputs.forEach(input => {
+                        if (!input.value) isValid = false;
+                    });
+
+                    if (isValid) {
+                         form.reset();
+
+                         window.location.href = "404.html";
+                    }
+                });
+            });
+        });
+
+
+
+    </script>
+
+    
+</body>
+
+</html>

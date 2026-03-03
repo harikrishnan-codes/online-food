@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Savoria - Fine Dining Restaurant">
+    <title>Stackly</title>
+    <link rel="icon" href="./Assets/bg remove.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo"><img src="./Assets/white.webp" alt="logo" width="150px"></a>
+
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                </ul>
+                <!-- <a href="#reservations" class="btn btn-primary nav-btn">Book a Table</a> -->
+                <a href="sign.html" class="btn btn-primary nav-btn">SignUp</a>
+
+            </nav>
+
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+
+        <section class="page-indicator">
+            <div class="hero-bg-wrapper">
+                <img src="Assets/hero 2.webp" alt="About Us Background" class="parallax-img">
+            </div>
+
+            <div class="container">
+                <div class="indicator-content js-tilt">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span class="separator">/</span>
+                        <span class="current-page">Contact</span>
+                    </nav>
+                    <h1 class="page-title">Grill. Chill. Repeat.<span>.</span></h1>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="section booking-section">
+            <div class="container">
+                <div class="booking-wrapper reveal-up">
+                    <div class="booking-info">
+                        <span class="section-subtitle">Reserve a Table</span>
+                        <h2 class="section-title">A Culinary Journey <br>Awaits<span>.</span></h2>
+                        <p>For parties larger than 8, please contact our events team directly via phone or email.</p>
+
+                        <div class="direct-contact">
+                            <div class="contact-item">
+                                <small>Call Us</small>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="contact-item">
+                                <small>Email Us</small>
+                                <p>reservations@luxe.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-form-card js-form-step">
+                        <form id="reservationForm">
+                            <div class="form-step active" data-step="1">
+                                <div class="input-group">
+                                    <label>Date</label>
+                                    <input type="date" required>
+                                </div>
+                                <div class="input-group">
+                                    <label>Guests</label>
+                                    <select>
+                                        <option>2 Persons</option>
+                                        <option>4 Persons</option>
+                                        <option>6 Persons</option>
+                                        <option>8 Persons</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-primary next-step">Next Details</button>
+                            </div>
+
+                            <div class="form-step" data-step="2">
+                                <div class="input-group">
+                                    <label>Full Name</label>
+                                    <input type="text" placeholder="Your name" required>
+                                </div>
+                                <div class="input-group">
+                                    <label>Email Address</label>
+                                    <input type="email" placeholder="email@example.com" required>
+                                </div>
+                                <div class="btn-flex">
+                                    <button type="button" class="link-btn prev-step">Back</button>
+                                    <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="section location-section reveal-container">
+            <div class="container">
+                <div class="location-grid">
+                    <div class="map-wrapper js-map-reveal">
+                        <div class="map-overlay"></div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215152809347!2d-73.98784412342551!3d40.75797873484003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480293%3A0x51173702478717b!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="location-card slide-right">
+                        <div class="card-inner">
+                            <span class="section-subtitle">Visit Us</span>
+                            <h2 class="section-title">The Heart of <br> Manhattan</h2>
+
+                            <div class="address-details">
+                                <div class="detail-group">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>123 Luxury Avenue, <br> New York, NY 10001</p>
+                                </div>
+                                <div class="detail-group">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Mon - Sun: 5:00 PM - 11:00 PM</p>
+                                </div>
+                            </div>
+
+                            <a href="https://maps.google.com" target="_blank" class="btn-link">
+                                Get Directions <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="section contact-pillars reveal-container">
+            <div class="container">
+                <div class="pillars-grid">
+                    <div class="pillar-card slide-up-stagger">
+                        <div class="pillar-icon-wrap">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>General Inquiries</h3>
+                        <p>For table modifications or general questions regarding our menu and services.</p>
+                        <a href="mailto:hello@luxe.com" class="pillar-link">hello@luxe.com</a>
+                    </div>
+
+                    <div class="pillar-card slide-up-stagger">
+                        <div class="pillar-icon-wrap">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3>Private Events</h3>
+                        <p>Planning a corporate dinner or private celebration? Our events team is here to help.</p>
+                        <a href="mailto:events@luxe.com" class="pillar-link">events@luxe.com</a>
+                    </div>
+
+                    <div class="pillar-card slide-up-stagger">
+                        <div class="pillar-icon-wrap">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <h3>Press & Media</h3>
+                        <p>For media kits, high-resolution imagery, or interview requests with Chef Julian.</p>
+                        <a href="mailto:media@luxe.com" class="pillar-link">media@luxe.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="section social-horizon reveal-container">
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <span>FOLLOW LUXÈ • FOLLOW LUXÈ • FOLLOW LUXÈ • FOLLOW LUXÈ • FOLLOW LUXÈ • </span>
+                    <span>FOLLOW LUXÈ • FOLLOW LUXÈ • FOLLOW LUXÈ • FOLLOW LUXÈ • FOLLOW LUXÈ • </span>
+                </div>
+            </div>
+
+            <div class="container social-content">
+                <div class="social-header text-center">
+                    <h2 class="section-title">Join Our Universe<span>.</span></h2>
+                    <p class="section-subtitle">@LUXE_RESTAURANT</p>
+                </div>
+
+                <div class="social-links-large">
+                    <a href="#" class="social-box">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-box">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-box">
+                        <i class="fab fa-youtube"></i>
+                        <span>Youtube</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="section digital-services reveal-container">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-box slide-up-stagger">
+                        <div class="service-visual">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Digital Gift Cards</h3>
+                            <p>Share the LUXÈ experience with loved ones. Available for instant delivery via email.</p>
+                            <a href="./404.html" class="btn btn-outline btn-small">Purchase Online</a>
+                        </div>
+                    </div>
+
+                    <div class="service-box slide-up-stagger">
+                        <div class="service-visual">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>The Inner Circle</h3>
+                            <p>Join our newsletter for exclusive early access to seasonal menu launches and tasting
+                                events.</p>
+                            <form class="mini-subscribe" action="./404.html" method="GET">
+                                <input type="email" placeholder="Your Email" required>
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <div class="testimonial-container">
+                        <div class="testimonial-slide active">
+                            <div class="quote-icon">“</div>
+                            <p class="testimonial-text">The attention to detail is simply unmatched. From the first bite
+                                of the truffle risotto to the last sip of wine, it was a culinary journey I won't
+                                forget.</p>
+                            <h4 class="guest-name">Alexander Wright</h4>
+                            <span class="guest-title">Food Critic</span>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="quote-icon">“</div>
+                            <p class="testimonial-text">An absolute gem in the city. The atmosphere is sophisticated yet
+                                welcoming, and the seasonal menu is always a delightful surprise.</p>
+                            <h4 class="guest-name">Sophia Loren</h4>
+                            <span class="guest-title">Frequent Guest</span>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="quote-icon">“</div>
+                            <p class="testimonial-text">Exquisite plating and flavors that dance on the palate. A
+                                must-visit for anyone who truly appreciates the art of fine dining.</p>
+                            <h4 class="guest-name">Julian Marc</h4>
+                            <span class="guest-title">Executive Chef</span>
+                        </div>
+                    </div>
+
+                    <div class="slider-nav">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="section faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Common Inquiries</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is the dress code for dining?</span>
+                            <i class="plus-icon">+</i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We maintain a smart-casual dress code. While we do not require formal wear, we request
+                                that guests refrain from wearing athletic attire, flip-flops, or swimwear.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you accommodate dietary restrictions?</span>
+                            <i class="plus-icon">+</i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. Our chefs specialize in tailoring dishes for vegan, gluten-free, and
+                                nut-allergy requirements. Please mention any restrictions when making your reservation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is there a private dining area for events?</span>
+                            <i class="plus-icon">+</i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer two private suites suitable for corporate events or intimate celebrations,
+                                catering to groups from 10 to 30 guests.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How far in advance should I book?</span>
+                            <i class="plus-icon">+</i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We recommend booking at least 2 weeks in advance for weekends and 3–5 days in advance for
+                                weekday dining to ensure your preferred time slot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#" class="footer-logo"><img src="./Assets/white.webp" alt="logo" width="150px"></a>
+                <p class="footer-text">Elevating your dining experience with exquisite flavors and impeccable service
+                    since 1998.</p>
+                <div class="social-links">
+                    <a href="404.html"><i class="fab fa-instagram"></i></a>
+                    <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="404.html"><i class="fab fa-twitter"></i></a>
+                    <a href="404.html"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="sign.html">SignUp</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Culinary Boulevard, New York, NY 10001</li>
+                    <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> reservations@savoria.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Opening Hours</h3>
+                <ul class="footer-hours">
+                    <li><span>Mon - Thu:</span> 11:00 AM - 10:00 PM</li>
+                    <li><span>Fri - Sat:</span> 11:00 AM - 11:30 PM</li>
+                    <li><span>Sunday:</span> 10:00 AM - 9:00 PM</li>
+                </ul>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2024 Savoria Restaurant. All Rights Reserved.</p>
+                <div class="bottom-links">
+                    <a href="404.html">Privacy Policy</a>
+                    <a href="404.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+
+        // table reserve js
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const nextBtn = document.querySelector('.next-step');
+            const prevBtn = document.querySelector('.prev-step');
+            const steps = document.querySelectorAll('.form-step');
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    steps[0].classList.remove('active');
+                    steps[1].classList.add('active');
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    steps[1].classList.remove('active');
+                    steps[0].classList.add('active');
+                });
+            }
+        });
+
+
+
+
+        // map js
+
+        const mapReveal = document.querySelector('.js-map-reveal');
+
+        const mapObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (mapReveal) {
+            mapObserver.observe(mapReveal);
+        }
+ 
+
+
+
+        // testimonial js
+
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        let slideInterval = setInterval(() => {
+            let next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        }, 5000);
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                clearInterval(slideInterval);
+                showSlide(parseInt(dot.dataset.index));
+            });
+        });
+
+
+
+
+        // FAQ js
+
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                faqItem.classList.toggle('active');
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>`

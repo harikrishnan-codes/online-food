@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Savoria - Fine Dining Restaurant">
+    <title>Stackly</title>
+    <link rel="icon" href="./Assets/bg remove.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo"><img src="./Assets/white.webp" alt="logo" width="150px"></a>
+
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                </ul>
+                <!-- <a href="#reservations" class="btn btn-primary nav-btn">Book a Table</a> -->
+                <a href="sign.html" class="btn btn-primary nav-btn">SignUp</a>
+
+            </nav>
+
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+
+        <section class="page-indicator">
+            <div class="hero-bg-wrapper">
+                <img src="Assets/hero 2.webp" alt="About Us Background" class="parallax-img">
+            </div>
+
+            <div class="container">
+                <div class="indicator-content js-tilt">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span class="separator">/</span>
+                        <span class="current-page">Menu</span>
+                    </nav>
+                    <h1 class="page-title">Grill. Chill. Repeat.<span>.</span></h1>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="menu-gallery">
+            <div class="gallery-header">
+                <div class="header-accent"></div>
+                <div class="header-text-box">
+                    <span class="section-subtitle">Visual Experience</span>
+                    <h2 class="section-title">Culinary <br><span>Canvas</span></h2>
+                    <p class="header-desc">A curated gallery of our seasonal masterpieces, crafted for the eyes before
+                        the palate.</p>
+                </div>
+            </div>
+            <div class="gallery-grid">
+
+                <!-- 1 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800"
+                        alt="Steak">
+                    <div class="gallery-overlay">
+                        <h3>Grilled Ribeye</h3>
+                        <p>Smoky, tender, and flame-kissed perfection.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
+                        alt="Pasta">
+                    <div class="gallery-overlay">
+                        <h3>Truffle Pasta</h3>
+                        <p>Handcrafted tagliatelle with rich truffle sauce.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&q=80&w=800"
+                        alt="Seafood">
+                    <div class="gallery-overlay">
+                        <h3>Garlic Butter Shrimp</h3>
+                        <p>Fresh catch sautéed in aromatic herbs.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600891963935-c3d0d1f6b2c5?auto=format&fit=crop&q=80&w=800"
+                        alt="Lamb">
+                    <div class="gallery-overlay">
+                        <h3>Lamb Chops</h3>
+                        <p>Herb-crusted with rosemary glaze.</p>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=800"
+                        alt="Ambiance">
+                    <div class="gallery-overlay">
+                        <h3>Fine Dining Ambiance</h3>
+                        <p>Where flavor meets elegance.</p>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&q=80&w=800"
+                        alt="Plating">
+                    <div class="gallery-overlay">
+                        <h3>Artistic Plating</h3>
+                        <p>Crafted with passion and precision.</p>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&q=80&w=800"
+                        alt="Salad">
+                    <div class="gallery-overlay">
+                        <h3>Seasonal Salad</h3>
+                        <p>Fresh greens with citrus dressing.</p>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1548946526-f69e2424cf45?auto=format&fit=crop&q=80&w=800"
+                        alt="Dessert">
+                    <div class="gallery-overlay">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Warm, rich, and irresistibly indulgent.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="section menu-filter">
+            <div class="container">
+                <div class="filter-tabs reveal-up">
+                    <button class="filter-btn active" data-filter="all">Full Menu</button>
+                    <button class="filter-btn" data-filter="starters">Starters</button>
+                    <button class="filter-btn" data-filter="mains">Main Course</button>
+                    <button class="filter-btn" data-filter="drinks">Wine & Spirits</button>
+                </div>
+
+                <div class="menu-grid js-menu-grid">
+                    <div class="menu-item starters" data-category="starters">
+                        <div class="item-header">
+                            <h3>Burrata Hearth</h3>
+                            <div class="item-dots"></div>
+                            <span class="price">$18</span>
+                        </div>
+                        <p class="item-desc">Smoked cherry tomatoes, basil oil, toasted sourdough.</p>
+                    </div>
+
+                    <div class="menu-item mains" data-category="mains">
+                        <div class="item-header">
+                            <h3>Dry-Aged Ribeye</h3>
+                            <div class="item-dots"></div>
+                            <span class="price">$52</span>
+                        </div>
+                        <p class="item-desc">28-day aged, truffle mash, red wine reduction.</p>
+                    </div>
+
+                    <div class="menu-item starters" data-category="starters">
+                        <div class="item-header">
+                            <h3>Octopus Carpaccio</h3>
+                            <div class="item-dots"></div>
+                            <span class="price">$22</span>
+                        </div>
+                        <p class="item-desc">Caper berries, citrus segments, extra virgin olive oil.</p>
+                    </div>
+
+                    <div class="menu-item drinks" data-category="drinks">
+                        <div class="item-header">
+                            <h3>Chateau Margaux</h3>
+                            <div class="item-dots"></div>
+                            <span class="price">$120</span>
+                        </div>
+                        <p class="item-desc">Vintage 2015, notes of dark berries and oak.</p>
+                    </div>
+
+                    <div class="menu-item mains" data-category="mains">
+                        <div class="item-header">
+                            <h3>Herb-Crusted Lamb Rack</h3>
+                            <div class="item-dots"></div>
+                            <span class="price">$48</span>
+                        </div>
+                        <p class="item-desc">Rosemary crust, garlic butter glaze, roasted seasonal vegetables.</p>
+                    </div>
+
+                    <div class="menu-item drinks" data-category="drinks">
+                        <div class="item-header">
+                            <h3>Signature Citrus Spritz</h3>
+                            <div class="item-dots"></div>
+                            <span class="price">$18</span>
+                        </div>
+                        <p class="item-desc">Fresh orange zest, sparkling prosecco, hint of elderflower.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="section showcase">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Chef's Recommendation</span>
+                    <h2 class="section-title">The Art of the Plate</h2>
+                </div>
+
+                <div class="showcase-grid">
+                    <div class="showcase-item">
+                        <div class="showcase-img-box">
+                            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800"
+                                alt="Signature Dish">
+                            <div class="showcase-badge">Signature</div>
+                        </div>
+                        <div class="showcase-info">
+                            <h3>Hearth-Roasted Lobster</h3>
+                            <p>Infused with saffron butter, served over a bed of samphire and charcoal-grilled leeks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="showcase-item">
+                        <div class="showcase-img-box">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800"
+                                alt="Specialty Cut">
+                        </div>
+                        <div class="showcase-info">
+                            <h3>Wagyu Tomahawk</h3>
+                            <p>A4 Grade Wagyu, smoked with applewood and finished with a black garlic glaze.</p>
+                        </div>
+                    </div>
+
+                    <div class="showcase-item">
+                        <div class="showcase-img-box">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800"
+                                alt="Signature Steak">
+                            <div class="showcase-badge">Chef’s Special</div>
+                        </div>
+                        <div class="showcase-info">
+                            <h3>Fire-Grilled Wagyu Steak</h3>
+                            <p>Premium wagyu beef, truffle jus, smoked sea salt flakes, and roasted heirloom carrots.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="showcase-item">
+                        <div class="showcase-img-box">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
+                                alt="Gourmet Pasta">
+                            <div class="showcase-badge">New Arrival</div>
+                        </div>
+                        <div class="showcase-info">
+                            <h3>Wild Mushroom Tagliatelle</h3>
+                            <p>Handmade pasta tossed in creamy porcini sauce with aged parmesan and fresh thyme.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="section wine-parallax">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Vintages & Vineyards</span>
+                    <h2 class="section-title">The Private Cellar</h2>
+                </div>
+
+                <div class="wine-grid">
+                    <div class="wine-card js-parallax-card">
+                        <div class="wine-bg-text">2018</div>
+                        <div class="wine-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=400"
+                                alt="Red Wine" class="js-parallax-img">
+                        </div>
+                        <div class="wine-details">
+                            <h3>Cabernet Sauvignon</h3>
+                            <p>Napa Valley • Oak & Blackberry</p>
+                            <span class="wine-price">$140</span>
+                        </div>
+                    </div>
+
+                    <div class="wine-card js-parallax-card">
+                        <div class="wine-bg-text">2020</div>
+                        <div class="wine-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1553122912-78d9bb651759?auto=format&fit=crop&q=80&w=400"
+                                alt="White Wine" class="js-parallax-img">
+                        </div>
+                        <div class="wine-details">
+                            <h3>Chardonnay Reserve</h3>
+                            <p>Sonoma Coast • Crisp & Citrus</p>
+                            <span class="wine-price">$95</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="section journey reveal-container">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">The Experience</span>
+                    <h2 class="section-title">A Four-Course Narrative</h2>
+                </div>
+
+                <div class="journey-timeline">
+                    <div class="journey-item slide-up-stagger">
+                        <div class="journey-number">01</div>
+                        <div class="journey-content">
+                            <h3>The Awakening</h3>
+                            <p>Amuse-bouche of chilled cucumber gazpacho with mint oil and a hint of serrano chili.</p>
+                        </div>
+                    </div>
+
+                    <div class="journey-item slide-up-stagger">
+                        <div class="journey-number">02</div>
+                        <div class="journey-content">
+                            <h3>The Sea</h3>
+                            <p>Scallop crudo with yuzu vinaigrette, pickled radishes, and toasted nori crumble.</p>
+                        </div>
+                    </div>
+
+                    <div class="journey-item slide-up-stagger">
+                        <div class="journey-number">03</div>
+                        <div class="journey-content">
+                            <h3>The Land</h3>
+                            <p>Herb-crusted lamb loin, parsnip purée, and a rich red wine reduction with rosemary.</p>
+                        </div>
+                    </div>
+
+                    <div class="journey-item slide-up-stagger">
+                        <div class="journey-number">04</div>
+                        <div class="journey-content">
+                            <h3>The Sweet Finale</h3>
+                            <p>Deconstructed lemon tart, basil sorbet, and honey-glazed almond brittle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <div class="testimonial-container">
+                        <div class="testimonial-slide active">
+                            <div class="quote-icon">“</div>
+                            <p class="testimonial-text">The attention to detail is simply unmatched. From the first bite
+                                of the truffle risotto to the last sip of wine, it was a culinary journey I won't
+                                forget.</p>
+                            <h4 class="guest-name">Alexander Wright</h4>
+                            <span class="guest-title">Food Critic</span>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="quote-icon">“</div>
+                            <p class="testimonial-text">An absolute gem in the city. The atmosphere is sophisticated yet
+                                welcoming, and the seasonal menu is always a delightful surprise.</p>
+                            <h4 class="guest-name">Sophia Loren</h4>
+                            <span class="guest-title">Frequent Guest</span>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="quote-icon">“</div>
+                            <p class="testimonial-text">Exquisite plating and flavors that dance on the palate. A
+                                must-visit for anyone who truly appreciates the art of fine dining.</p>
+                            <h4 class="guest-name">Julian Marc</h4>
+                            <span class="guest-title">Executive Chef</span>
+                        </div>
+                    </div>
+
+                    <div class="slider-nav">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="section faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Common Inquiries</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is the dress code for dining?</span>
+                            <i class="plus-icon">+</i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We maintain a smart-casual dress code. While we do not require formal wear, we request
+                                that guests refrain from wearing athletic attire, flip-flops, or swimwear.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you accommodate dietary restrictions?</span>
+                            <i class="plus-icon">+</i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. Our chefs specialize in tailoring dishes for vegan, gluten-free, and
+                                nut-allergy requirements. Please mention any restrictions when making your reservation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is there a private dining area for events?</span>
+                            <i class="plus-icon">+</i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer two private suites suitable for corporate events or intimate celebrations,
+                                catering to groups from 10 to 30 guests.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How far in advance should I book?</span>
+                            <i class="plus-icon">+</i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We recommend booking at least 2 weeks in advance for weekends and 3–5 days in advance for
+                                weekday dining to ensure your preferred time slot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="section sweet-closing reveal-container">
+            <div class="closing-bg-box">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=1600"
+                    alt="Restaurant Interior Ambience" class="closing-img">
+            </div>
+
+            <div class="container closing-content">
+                <div class="glass-card slide-up">
+                    <span class="section-subtitle">Reserve Online</span>
+                    <h2 class="section-title">Book Your Table in Seconds</h2>
+
+                    <p>
+                        Planning a romantic dinner, family gathering, or corporate meeting?
+                        Secure your preferred table instantly with our seamless online reservation system.
+                    </p>
+
+                    <p>
+                        Choose your date, time, and seating preference — and let us prepare
+                        an exceptional dining experience tailored just for you.
+                    </p>
+
+                    <a href="#reservations" class="btn btn-primary">Make a Reservation</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#" class="footer-logo"><img src="./Assets/white.webp" alt="logo" width="150px"></a>
+                <p class="footer-text">Elevating your dining experience with exquisite flavors and impeccable service
+                    since 1998.</p>
+                <div class="social-links">
+                    <a href="404.html"><i class="fab fa-instagram"></i></a>
+                    <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="404.html"><i class="fab fa-twitter"></i></a>
+                    <a href="404.html"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="sign.html">SignUp</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Culinary Boulevard, New York, NY 10001</li>
+                    <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> reservations@savoria.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Opening Hours</h3>
+                <ul class="footer-hours">
+                    <li><span>Mon - Thu:</span> 11:00 AM - 10:00 PM</li>
+                    <li><span>Fri - Sat:</span> 11:00 AM - 11:30 PM</li>
+                    <li><span>Sunday:</span> 10:00 AM - 9:00 PM</li>
+                </ul>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2024 Savoria Restaurant. All Rights Reserved.</p>
+                <div class="bottom-links">
+                    <a href="404.html">Privacy Policy</a>
+                    <a href="404.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+
+
+
+
+
+        // page indicator js
+
+        window.addEventListener('scroll', () => {
+            const scroll = window.pageYOffset;
+            const bgImg = document.querySelector('.parallax-img');
+            bgImg.style.transform = `translateY(${scroll * 0.4}px)`;
+        });
+
+        const card = document.querySelector('.js-tilt');
+
+        if (window.innerWidth > 768) {
+            window.addEventListener('mousemove', (e) => {
+                const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+                const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+                card.style.transform = `rotateY(${xAxis}px) rotateX(${yAxis}px)`;
+            });
+
+            window.addEventListener('mouseenter', () => {
+                card.style.transition = 'none';
+            });
+
+            window.addEventListener('mouseleave', () => {
+                card.style.transition = 'all 0.5s ease';
+                card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+            });
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        // menu js
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                const items = document.querySelectorAll('.menu-item');
+
+                items.forEach((item, index) => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(10px)';
+
+                    setTimeout(() => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, index * 50);
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }, 300);
+                });
+            });
+        });
+
+
+
+
+
+        // wine js
+
+        const wineCards = document.querySelectorAll('.js-parallax-card');
+
+        wineCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const moveX = (x - centerX) / 20;
+                const moveY = (y - centerY) / 20;
+
+                const bgText = card.querySelector('.wine-bg-text');
+                bgText.style.transform = `translate(${-moveX * 1.5}px, ${-moveY * 1.5}px)`;
+
+                const bottle = card.querySelector('.wine-img-wrap');
+                bottle.style.transform = `translate(${moveX}px, ${moveY}px) rotateY(${moveX}deg)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                const bgText = card.querySelector('.wine-bg-text');
+                const bottle = card.querySelector('.wine-img-wrap');
+
+                bgText.style.transform = `translate(0, 0)`;
+                bottle.style.transform = `translate(0, 0) rotateY(0deg)`;
+
+                bgText.style.transition = 'transform 0.5s ease';
+                bottle.style.transition = 'transform 0.5s ease';
+            });
+        });
+
+
+
+
+        // active js 
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.15
+            });
+
+            const containers = document.querySelectorAll('.reveal-container');
+            containers.forEach(container => revealObserver.observe(container));
+        });
+
+
+
+
+
+
+        // testimonial js
+
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        let slideInterval = setInterval(() => {
+            let next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        }, 5000);
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                clearInterval(slideInterval);
+                showSlide(parseInt(dot.dataset.index));
+            });
+        });
+
+
+
+
+        // FAQ js
+
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                faqItem.classList.toggle('active');
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>`
