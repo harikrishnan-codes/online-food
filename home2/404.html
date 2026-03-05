@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        :root {
+  --bg-deep: black;       
+  --bg-surface: #141212d6;     
+  --accent: #ff2e63;        
+  --accent-soft: #ff2e6322;  
+  --text-primary: #ffffff;  
+  --text-secondary: #a0a0a5; 
+  --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--bg-deep);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-container {
+    text-align: center;
+    z-index: 10;
+}
+
+/* Floating Background Animation */
+.glow-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: var(--accent);
+    filter: blur(150px);
+    border-radius: 50%;
+    opacity: 0.15;
+    z-index: 1;
+    animation: float 10s infinite alternate;
+}
+
+.glow-circle:nth-child(1) { top: 10%; left: 10%; }
+.glow-circle:nth-child(2) { bottom: 10%; right: 10%; animation-delay: -5s; }
+
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 100px); }
+}
+
+/* Glitch Effect for 404 */
+.glitch {
+    font-size: 8rem;
+    font-weight: 900;
+    position: relative;
+    color: var(--text-primary);
+    text-shadow: 2px 2px var(--accent);
+    margin-bottom: 10px;
+}
+
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -2px 0 var(--accent);
+    top: 0;
+    color: white;
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch-anim 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% { clip: rect(44px, 9999px, 56px, 0); }
+    20% { clip: rect(12px, 9999px, 30px, 0); }
+    40% { clip: rect(78px, 9999px, 92px, 0); }
+    60% { clip: rect(21px, 9999px, 45px, 0); }
+    80% { clip: rect(67px, 9999px, 80px, 0); }
+    100% { clip: rect(10px, 9999px, 25px, 0); }
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+p {
+    color: var(--text-secondary);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid var(--accent);
+    color: var(--text-primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.back-home:hover {
+    background: var(--accent);
+    box-shadow: 0 0 20px var(--accent);
+    transform: translateY(-3px);
+}
+    </style>
+
+
+
+    <div class="error-container">
+        <div class="glow-circle"></div>
+        <div class="glow-circle"></div>
+
+        <div class="content">
+            <h1 class="glitch" data-text="404">404</h1>
+            <h2>Oops! Table Not Found</h2>
+            <p>The page you're looking for has been cleared from the menu. Let's get you back to the main course.</p>
+            <a href="index.html" class="back-home">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

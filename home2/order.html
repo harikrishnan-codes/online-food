@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Stackly</title>
+    <link rel="icon" href="../Assets/bg remove.webp">
+    <link rel="stylesheet" href="./order.css">
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a class="logo"><img src="../Assets/pink.webp" alt="" width="150px"></a>
+
+            <div class="hamburger" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="order.html" class="active">Order Online</a></li>
+                <li><a href="reserve.html">Reservation</a></li>
+                <li><a href="contact.html" class="btn-cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="order-main">
+        <!-- Order Hero Section -->
+        <section class="order-hero">
+            <div class="hero-particles">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="order-hero-content">
+                <span class="order-badge"><i class="fas fa-motorcycle"></i> Fast Delivery</span>
+                <h1 class="order-title">Order <span>Online</span></h1>
+                <p class="order-subtitle">Fresh ingredients, delivered to your doorstep within 30 minutes</p>
+                <div class="delivery-info">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>30-45 min</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-star"></i>
+                        <span>4.9 Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Scroll to Explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Order Content Section -->
+        <section class="order-content">
+            <div class="container">
+                <!-- Category Filters -->
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">
+                        <span class="filter-icon"><i class="fas fa-th-large"></i></span>
+                        <span class="filter-text">All Items</span>
+                    </button>
+                    <button class="filter-btn" data-category="starters">
+                        <span class="filter-icon"><i class="fas fa-utensils"></i></span>
+                        <span class="filter-text">Starters</span>
+                    </button>
+                    <button class="filter-btn" data-category="mains">
+                        <span class="filter-icon"><i class="fas fa-drumstick-bite"></i></span>
+                        <span class="filter-text">Main Course</span>
+                    </button>
+                    <button class="filter-btn" data-category="desserts">
+                        <span class="filter-icon"><i class="fas fa-ice-cream"></i></span>
+                        <span class="filter-text">Desserts</span>
+                    </button>
+                    <button class="filter-btn" data-category="drinks">
+                        <span class="filter-icon"><i class="fas fa-cocktail"></i></span>
+                        <span class="filter-text">Drinks</span>
+                    </button>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-grid">
+                    <!-- Starters -->
+                    <div class="menu-item" data-category="starters">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400" alt="Bruschetta">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                            <span class="item-tag">Popular</span>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Truffle Bruschetta</h3>
+                                <span class="item-price">$12</span>
+                            </div>
+                            <p class="item-desc">Toasted sourdough, black truffle, aged parmesan, arugula</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="starters">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400" alt="Soup">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Creamy Mushroom Soup</h3>
+                                <span class="item-price">$10</span>
+                            </div>
+                            <p class="item-desc">Wild mushrooms, truffle oil, fresh herbs, crusty bread</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="starters">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=400" alt="Chicken Wings">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                            <span class="item-tag spicy">Spicy</span>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Buffalo Wings</h3>
+                                <span class="item-price">$14</span>
+                            </div>
+                            <p class="item-desc">Crispy wings, spicy buffalo sauce, blue cheese dip</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mains -->
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Wagyu">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                            <span class="item-tag">Chef's Pick</span>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Smoked Wagyu Ribeye</h3>
+                                <span class="item-price">$85</span>
+                            </div>
+                            <p class="item-desc">Cherrywood smoke, bone marrow butter, pink salt crust</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400" alt="Pasta">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Truffle Tagliatelle</h3>
+                                <span class="item-price">$38</span>
+                            </div>
+                            <p class="item-desc">Hand-rolled pasta, black truffle, 36-month parmesan</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400" alt="Salmon">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                            <span class="item-tag healthy">Healthy</span>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Pan-Seared Salmon</h3>
+                                <span class="item-price">$42</span>
+                            </div>
+                            <p class="item-desc">Atlantic salmon, asparagus, lemon butter sauce</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pizza">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Truffle Mushroom Pizza</h3>
+                                <span class="item-price">$28</span>
+                            </div>
+                            <p class="item-desc">White base, wild mushrooms, truffle honey, mozzarella</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400" alt="Risotto">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Seafood Risotto</h3>
+                                <span class="item-price">$35</span>
+                            </div>
+                            <p class="item-desc">Arborio rice, shrimp, mussels, saffron cream</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desserts -->
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400" alt="Cake">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                            <span class="item-tag">Bestseller</span>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Chocolate Lava Cake</h3>
+                                <span class="item-price">$14</span>
+                            </div>
+                            <p class="item-desc">Molten chocolate center, vanilla ice cream, berries</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400" alt="Cheesecake">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">New York Cheesecake</h3>
+                                <span class="item-price">$12</span>
+                            </div>
+                            <p class="item-desc">Creamy cheesecake, graham crust, strawberry compote</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Tiramisu">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Classic Tiramisu</h3>
+                                <span class="item-price">$13</span>
+                            </div>
+                            <p class="item-desc">Espresso-soaked ladyfingers, mascarpone, cocoa dust</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drinks -->
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400" alt="Cocktail">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Signature Pink Martini</h3>
+                                <span class="item-price">$16</span>
+                            </div>
+                            <p class="item-desc">Vodka, raspberry liqueur, fresh lime, rose petals</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?w=400" alt="Wine">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Premium Red Wine</h3>
+                                <span class="item-price">$18</span>
+                            </div>
+                            <p class="item-desc">House selection, rich Cabernet Sauvignon, per glass</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400" alt="Smoothie">
+                            <div class="item-overlay">
+                                <button class="quick-view"><i class="fas fa-eye"></i> Quick View</button>
+                            </div>
+                            <span class="item-tag healthy">Fresh</span>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3 class="item-name">Berry Blast Smoothie</h3>
+                                <span class="item-price">$9</span>
+                            </div>
+                            <p class="item-desc">Mixed berries, yogurt, honey, almond milk</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floating Cart Button -->
+        <button class="floating-cart" id="floatingCart">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <span class="cart-total">$0.00</span>
+        </button>
+
+        <!-- Cart Sidebar -->
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-bag"></i> Your Order</h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>Your cart is empty</p>
+                    <span>Add some delicious items!</span>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-subtotal">
+                    <span>Subtotal</span>
+                    <span class="subtotal-amount">$0.00</span>
+                </div>
+                <div class="cart-delivery">
+                    <span>Delivery Fee</span>
+                    <span class="delivery-amount">$0.00</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span class="total-amount">$0.00</span>
+                </div>
+                <button class="checkout-btn">
+                    <i class="fas fa-lock"></i> Proceed to Checkout
+                </button>
+            </div>
+        </div>
+
+        <!-- Cart Overlay -->
+        <div class="cart-overlay" id="cartOverlay"></div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="../Assets/pink.webp" alt="" class="logo-img" width="150px">
+                    </div>
+                    <p class="brand-text">Elevating your dining experience with exquisite flavors and impeccable service
+                        since 1998.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="order.html">Order Online</a></li>
+                        <li><a href="reserve.html">Reservation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="col-title">Contact Info</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>123 Culinary Boulevard, New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>reservations@savoria.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="col-title">Opening Hours</h4>
+                    <div class="hours-wrap">
+                        <div class="hour-row">
+                            <span class="day">Mon - Thu:</span>
+                            <span class="time">11:00 AM - 10:00 PM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Fri - Sat:</span>
+                            <span class="time">11:00 AM - 11:30 PM</span>
+                        </div>
+                        <div class="hour-row no-border">
+                            <span class="day">Sunday:</span>
+                            <span class="time">10:00 AM - 9:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Savoria Restaurant. All Rights Reserved.</p>
+                <div class="bottom-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="style.js"></script>
+
+    <script>
+        // Order Page JavaScript
+
+        // DOM Elements
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const menuItems = document.querySelectorAll('.menu-item');
+        const floatingCart = document.getElementById('floatingCart');
+        const cartSidebar = document.getElementById('cartSidebar');
+        const closeCart = document.getElementById('closeCart');
+        const cartOverlay = document.getElementById('cartOverlay');
+        const cartItemsContainer = document.getElementById('cartItems');
+        const addToCartBtns = document.querySelectorAll('.add-to-cart');
+        
+        // Cart State
+        let cart = [];
+        let isCartOpen = false;
+
+        // Category Filter
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active to clicked
+                btn.classList.add('active');
+                
+                const category = btn.dataset.category;
+                
+                // Filter animation
+                menuItems.forEach((item, index) => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                        item.style.animation = `fadeInUp 0.5s ease forwards ${index * 0.1}s`;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add to Cart Functionality
+        addToCartBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const itemCard = e.target.closest('.menu-item');
+                const name = itemCard.querySelector('.item-name').textContent;
+                const price = parseFloat(itemCard.querySelector('.item-price').textContent.replace('$', ''));
+                const image = itemCard.querySelector('.item-image img').src;
+
+                // Add to cart array
+                const existingItem = cart.find(item => item.name === name);
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({ name, price, image, quantity: 1 });
+                }
+
+                // Update UI
+                updateCartUI();
+                
+                // Button animation
+                btn.innerHTML = '<i class="fas fa-check"></i> Added';
+                btn.classList.add('added');
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-plus"></i> Add';
+                    btn.classList.remove('added');
+                }, 1500);
+
+                // Open cart
+                openCart();
+            });
+        });
+
+        // Update Cart UI
+        function updateCartUI() {
+            const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const cartTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            
+            // Update floating cart
+            document.querySelector('.cart-count').textContent = cartCount;
+            document.querySelector('.cart-total').textContent = `$${cartTotal.toFixed(2)}`;
+
+            // Update sidebar
+            const subtotal = cartTotal;
+            const deliveryFee = cartTotal > 0 ? 5 : 0;
+            const total = subtotal + deliveryFee;
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = `
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Your cart is empty</p>
+                        <span>Add some delicious items!</span>
+                    </div>
+                `;
+            } else {
+                cartItemsContainer.innerHTML = cart.map((item, index) => `
+                    <div class="cart-item" data-index="${index}">
+                        <div class="cart-item-image">
+                            <img src="${item.image}" alt="${item.name}">
+                        </div>
+                        <div class="cart-item-details">
+                            <h4>${item.name}</h4>
+                            <span class="cart-item-price">$${item.price.toFixed(2)}</span>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus" data-index="${index}"><i class="fas fa-minus"></i></button>
+                                <span class="qty-value">${item.quantity}</span>
+                                <button class="qty-btn plus" data-index="${index}"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <button class="remove-item" data-index="${index}"><i class="fas fa-trash"></i></button>
+                    </div>
+                `).join('');
+            }
+
+            document.querySelector('.subtotal-amount').textContent = `$${subtotal.toFixed(2)}`;
+            document.querySelector('.delivery-amount').textContent = deliveryFee === 0 ? 'FREE' : `$${deliveryFee.toFixed(2)}`;
+            document.querySelector('.total-amount').textContent = `$${total.toFixed(2)}`;
+
+            // Quantity controls
+            document.querySelectorAll('.qty-btn.minus').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const index = parseInt(e.target.closest('.qty-btn').dataset.index);
+                    if (cart[index].quantity > 1) {
+                        cart[index].quantity--;
+                    } else {
+                        cart.splice(index, 1);
+                    }
+                    updateCartUI();
+                });
+            });
+
+            document.querySelectorAll('.qty-btn.plus').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const index = parseInt(e.target.closest('.qty-btn').dataset.index);
+                    cart[index].quantity++;
+                    updateCartUI();
+                });
+            });
+
+            document.querySelectorAll('.remove-item').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const index = parseInt(e.target.closest('.remove-item').dataset.index);
+                    cart.splice(index, 1);
+                    updateCartUI();
+                });
+            });
+        }
+
+        // Open/Close Cart
+        function openCart() {
+            cartSidebar.classList.add('active');
+            cartOverlay.classList.add('active');
+            isCartOpen = true;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCartFunc() {
+            cartSidebar.classList.remove('active');
+            cartOverlay.classList.remove('active');
+            isCartOpen = false;
+            document.body.style.overflow = '';
+        }
+
+        floatingCart.addEventListener('click', openCart);
+        closeCart.addEventListener('click', closeCartFunc);
+        cartOverlay.addEventListener('click', closeCartFunc);
+
+        // Staggered Animation on Load
+        window.addEventListener('load', () => {
+            menuItems.forEach((item, index) => {
+                item.style.animation = `fadeInUp 0.6s ease forwards ${index * 0.1}s`;
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        menuItems.forEach(item => observer.observe(item));
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navList = document.getElementById('nav-list');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navList.classList.toggle('nav-active');
+            mobileMenuBtn.classList.toggle('toggle-animation');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(n => n.addEventListener('click', () => {
+            navList.classList.remove('nav-active');
+        }));
+    </script>
+</body>
+
+</html>

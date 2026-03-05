@@ -1,97 +1,731 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stackly</title>
+    <link rel="icon" href="../Assets/bg remove.webp">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../root.css">
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    <header class="hero section" id="hero">
-    <div class="container hero-grid">
-        <div class="hero-content">
-            <span class="section-subtitle">Exquisite Dining</span>
-            <h1 class="hero-title">Artisan Flavors <br> <span class="text-gradient">Redefined.</span></h1>
-            <p class="hero-description">
-                Experience a symphony of taste where traditional techniques meet modern innovation. 
-                Crafted by world-class chefs for the discerning palate.
-            </p>
-            <div class="hero-btns">
-                <a href="#menu" class="btn btn-primary">Book a Table</a>
-                <a href="#about" class="btn btn-outline">Our Story</a>
-            </div>
-        </div>
-        <div class="hero-image-container js-reveal">
-            <div class="image-wrapper">
-                <img src="https://images.unsplash.com/photo-1550966842-307e07f47482?auto=format&fit=crop&q=80&w=800" alt="Signature Dish" class="hero-img">
-            </div>
-            <div class="experience-badge">
-                <span class="years">15+</span>
-                <span class="label">Years of <br> Excellence</span>
-            </div>
-        </div>
-    </div>
-</header>
-    
 
+    <header class="main-header">
+        <nav class="navbar">
+            <a class="logo"><img src="../Assets/pink.webp" alt="" width="150px"></span></a>
 
-
-
-
-
-
-
-
-
-<footer class="footer" id="contact">
-    <div class="container">
-        <div class="reservation-box reveal-up">
-            <span class="section-subtitle">Reservations</span>
-            <h2 class="section-title">Ready for an Unforgettable <br> Culinary Experience?</h2>
-            <p>Secure your table for tonight and indulge in the finest flavors.</p>
-            <form class="res-form">
-                <input type="date" class="form-input">
-                <select class="form-input">
-                    <option>2 Persons</option>
-                    <option>4 Persons</option>
-                    <option>6+ Persons</option>
-                </select>
-                <button type="submit" class="btn btn-primary">Check Availability</button>
-            </form>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="footer-brand">
-                <a href="#" class="logo">LUXÈ<span>.</span></a>
-                <p>Crafting excellence since 2011.</p>
-            </div>
-            
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#testimonials">Reviews</a></li>
-                </ul>
+            <div class="hamburger" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
 
-            <div class="footer-contact">
-                <p>123 Gourmet Avenue, NY</p>
-                <p>+1 (555) 123-4567</p>
-                <div class="socials">
-                    <a href="#">IN</a>
-                    <a href="#">FB</a>
-                    <a href="#">TW</a>
+            <ul class="nav-links" id="nav-list">
+                <li class="dropdown">
+                    <div class="home-link">
+                        <a href="index.html" class="active">Home</a>
+                        <span class="material-icons dropdown-arrow">arrow_drop_down</span>
+                    </div>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html">Home Style 1</a></li>
+                    </ul>
+                </li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="reserve.html">Reservation</a></li>
+                <li><a href="contact.html" class="btn-cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <main>
+
+        <section class="hero">
+            <div class="glow-orb" style="top: 20%; left: 10%;"></div>
+            <div class="glow-orb" style="bottom: 10%; right: 20%;"></div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge">100% Premium Ingredients</span>
+                    <h1 class="hero-title">Nature's Finest,<br><span>Plated for You.</span></h1>
+                    <p class="hero-desc">
+                        Experience a symphony of organic flavors delivered with a modern touch.
+                        From local farms to your table, we redefine the art of dining.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn-main">Explore Menu</a>
+                        <a href="#story" class="btn-outline">Our Story</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item"><strong>240+</strong><span>Dishes</span></div>
+                        <div class="stat-item"><strong>4.9</strong><span>Rating</span></div>
+                        <div class="stat-item"><strong>12k</strong><span>Guests</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" id="scene">
+                    <div class="grid-item item-1" data-depth="0.05">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500" alt="Salad">
+                        <div class="tag">Flash Deal</div>
+                    </div>
+                    <div class="grid-item item-2" data-depth="0.15">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=500" alt="Pizza">
+                    </div>
+                    <div class="grid-item item-3" data-depth="0.10">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=500" alt="Grill">
+                        <div class="tag pink">Chef's Pick</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-image">
+                    <div class="frame-decoration"></div>
+                    <img src="https://images.unsplash.com/photo-1577106212294-19958d4044a1?q=80&w=600"
+                        alt="Chef at work">
+                </div>
+
+                <div class="about-content">
+                    <span class="section-subtitle">Our Heritage</span>
+                    <h2 class="section-title">Crafting <span>Culinary</span> Excellence Since 2010</h2>
+                    <p class="section-text">
+                        At Pink Salt, we believe that food is more than just sustenance—it's an experience. Our chefs
+                        combine traditional techniques with modern fusion, using only the freshest organic ingredients
+                        to create masterpieces on every plate.
+                    </p>
+                    <ul class="about-features">
+                        <li><span class="icon">✓</span> 100% Organic & Local</li>
+                        <li><span class="icon">✓</span> Award Winning Chefs</li>
+                        <li><span class="icon">✓</span> Exclusive Dining Atmosphere</li>
+                    </ul>
+                    <a href="#more" class="btn-main">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="immersive-experience">
+            <div class="parallax-wrapper">
+                <div class="parallax-bg"></div>
+                <div class="container experience-content">
+                    <div class="content-box">
+                        <span class="subtitle">The Inner Circle</span>
+                        <h2 class="section-title">The Chef's <span class="accent-text">Table</span></h2>
+                        <p>An exclusive 12-course sensory journey limited to only 6 guests per night. Witness the
+                            alchemy of fire and ice from the best seat in the house.</p>
+
+                        <div class="experience-perks">
+                            <div class="perk">
+                                <span class="perk-icon">🍷</span>
+                                <p>Vintage Pairings</p>
+                            </div>
+                            <div class="perk">
+                                <span class="perk-icon">🔪</span>
+                                <p>Live Preparation</p>
+                            </div>
+                            <div class="perk">
+                                <span class="perk-icon">📜</span>
+                                <p>Personalized Menu</p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn-main">Inquire for Availability</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="signature-menu">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Curated Flavors</span>
+                    <h2 class="section-title">The Signature Selection</h2>
+                </div>
+
+                <div class="menu-display">
+                    <div class="menu-row">
+                        <div class="menu-img-preview">
+                            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=500"
+                                alt="Dish 1">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-wrap">
+                                <h3 class="dish-name">Truffle Infused Tagliatelle</h3>
+                                <span class="dish-price">$38</span>
+                            </div>
+                            <p class="dish-desc">Hand-rolled pasta, Piedmontese black truffle, 36-month aged parmesan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="menu-row">
+                        <div class="menu-img-preview">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500"
+                                alt="Dish 2">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-wrap">
+                                <h3 class="dish-name">Smoked Wagyu Ribeye</h3>
+                                <span class="dish-price">$85</span>
+                            </div>
+                            <p class="dish-desc">Cherrywood smoke, bone marrow butter, Himalayan pink salt crust.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-row">
+                        <div class="menu-img-preview">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=500"
+                                alt="Dish 3">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-wrap">
+                                <h3 class="dish-name">Seared Atlantic Scallops</h3>
+                                <span class="dish-price">$42</span>
+                            </div>
+                            <p class="dish-desc">Saffron cauliflower purée, crispy pancetta, herb-infused oil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="atmosphere-gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">The Ambience</span>
+                    <h2 class="section-title">A Symphony of Light & Space</h2>
+                </div>
+
+                <div class="gallery-bento">
+                    <div class="bento-item main-feature">
+                        <div class="bento-overlay">
+                            <span>The Main Hall</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200"
+                            alt="Restaurant Interior">
+                    </div>
+
+                    <div class="bento-item detail-one">
+                        <div class="bento-overlay">
+                            <span>The Wine Cellar</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b0ca7df?auto=format&fit=crop&w=600"
+                            alt="Wine Selection">
+                    </div>
+
+                    <div class="bento-item detail-two">
+                        <div class="bento-overlay">
+                            <span>Chef's Table</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600"
+                            alt="Chef at Work">
+                    </div>
+
+                    <div class="bento-item tall-feature">
+                        <div class="bento-overlay">
+                            <span>Mixology Bar</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600"
+                            alt="Bar Area">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="chef-craft">
+            <div class="container">
+                <div class="parallax-bg-text">CRAFTED</div>
+
+                <div class="craft-split">
+                    <div class="craft-image-area">
+                        <div class="frame-decorator"></div>
+                        <div class="main-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1577106212294-110e6aaf992a?auto=format&fit=crop&w=800"
+                                alt="Chef Searing" class="craft-img">
+                        </div>
+                    </div>
+
+                    <div class="craft-text-area">
+                        <span class="subtitle">The Art of Fire</span>
+                        <h2 class="section-title">Technique & <br><span class="accent-text">Tradition</span></h2>
+                        <p class="craft-description">
+                            Our kitchen is a theater of precision. Using ancient Japanese charcoal grilling techniques
+                            combined with modern molecular gastronomy, we transform raw ingredients into sensory
+                            memories.
+                        </p>
+                        <ul class="craft-list">
+                            <li><span class="bullet"></span> 48-Hour Slow Aged Proteins</li>
+                            <li><span class="bullet"></span> Foraged Seasonal Botanicals</li>
+                            <li><span class="bullet"></span> Hand-Forged Damascus Blades</li>
+                        </ul>
+                        <a href="#" class="btn-main">Meet the Chef</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="focus-testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Critic Reviews</span>
+                    <h2 class="section-title">The Culinary Verdict</h2>
+                </div>
+
+                <div class="focus-grid">
+                    <div class="focus-card" tabindex="0">
+                        <div class="focus-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600"
+                                alt="Critic">
+                        </div>
+                        <div class="focus-content">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-quote">"An absolute masterclass in flavor balancing. The Wagyu was
+                                like silk, and the atmosphere is pure electric luxury."</p>
+                            <div class="critic-info">
+                                <span class="critic-name">Marcus Thorne</span>
+                                <span class="critic-source">Gourmet Magazine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="focus-card" tabindex="0">
+                        <div class="focus-image">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600"
+                                alt="Critic">
+                        </div>
+                        <div class="focus-content">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-quote">"The best-kept secret in the city. The 'Late Night Noir'
+                                seating is a cinematic experience I won't soon forget."</p>
+                            <div class="critic-info">
+                                <span class="critic-name">Elena Sophia</span>
+                                <span class="critic-source">The Daily Plate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="focus-card" tabindex="0">
+                        <div class="focus-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600"
+                                alt="Critic">
+                        </div>
+                        <div class="focus-content">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-quote">"Technically flawless. From the lighting to the wine pairings,
+                                they have redefined what fine dining means in 2026."</p>
+                            <div class="critic-info">
+                                <span class="critic-name">Julian Vane</span>
+                                <span class="critic-source">Culinary Times</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Support & Clarity</span>
+                    <h2 class="section-title">Common Inquiries</h2>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span class="faq-number">01</span>
+                            <span class="faq-question">How secure is the architectural framework?</span>
+                            <span class="faq-plus"></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
+                                <p>We utilize a multi-layered security protocol, including end-to-end encryption and
+                                    real-time threat monitoring, ensuring your digital assets remain impenetrable under
+                                    any load.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span class="faq-number">02</span>
+                            <span class="faq-question">Can we customize the accent palettes?</span>
+                            <span class="faq-plus"></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
+                                <p>Absolutely. The entire UI is built on a dynamic CSS variable system, allowing you to
+                                    rebrand your entire interface with a single hex-code update in seconds.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span class="faq-number">03</span>
+                            <span class="faq-question">What is the expected integration timeline?</span>
+                            <span class="faq-plus"></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
+                                <p>Typical deployment cycles range from 4 to 6 weeks, depending on the complexity of
+                                    your legacy data migration and API requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span class="faq-number">04</span>
+                            <span class="faq-question">
+                                Do you offer home delivery?
+                            </span>
+                            <span class="faq-plus"></span>
+                        </button>
+
+                        <div class="faq-content">
+                            <div class="faq-inner">
+                                <p>
+                                    Yes, we provide fast and secure home delivery within city limits.
+                                    Delivery time usually ranges between 30–45 minutes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span class="faq-number">05</span>
+                            <span class="faq-question">
+                                What are your working hours?
+                            </span>
+                            <span class="faq-plus"></span>
+                        </button>
+
+                        <div class="faq-content">
+                            <div class="faq-inner">
+                                <p>
+                                    We are open daily from 10:00 AM to 11:00 PM,
+                                    including weekends and public holidays.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="reservation-section" id="book">
+            <div class="container">
+                <div class="res-wrapper">
+                    <div class="res-info">
+                        <span class="subtitle">Secure Your Table</span>
+                        <h2 class="section-title">An Unforgettable <br>Experience Awaits</h2>
+                        <p class="res-text">Due to our intimate seating arrangement, we recommend booking at least 7
+                            days in advance for weekend dining.</p>
+                        <div class="contact-brief">
+                            <div class="c-item"><span>Phone:</span> +1 (555) 987-6543</div>
+                            <div class="c-item"><span>Location:</span> 122nd Neon District, Metropolis</div>
+                        </div>
+                    </div>
+
+                    <div class="res-form-container">
+                        <form class="booking-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="number" placeholder="Guests" min="1" max="10" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Select Time</option>
+                                    <option>18:00 — Sunset Seating</option>
+                                    <option>20:30 — Moonlight Seating</option>
+                                    <option>22:00 — Late Night Noir</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-main full-width">Confirm Reservation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="../Assets/pink.webp" alt="" class="logo-img" width="150px">
+                    </div>
+                    <p class="brand-text">Elevating your dining experience with exquisite flavors and impeccable service
+                        since 1998.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Menu</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">SignUp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="col-title">Contact Info</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>123 Culinary Boulevard, New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>reservations@savoria.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="col-title">Opening Hours</h4>
+                    <div class="hours-wrap">
+                        <div class="hour-row">
+                            <span class="day">Mon - Thu:</span>
+                            <span class="time">11:00 AM - 10:00 PM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Fri - Sat:</span>
+                            <span class="time">11:00 AM - 11:30 PM</span>
+                        </div>
+                        <div class="hour-row no-border">
+                            <span class="day">Sunday:</span>
+                            <span class="time">10:00 AM - 9:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Savoria Restaurant. All Rights Reserved.</p>
+                <div class="bottom-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
             </div>
         </div>
-        
-        <div class="copyright">
-            <p>&copy; 2026 LUXÈ Restaurant. All Rights Reserved.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+
+
+
+
     <script src="./style.js"></script>
+
+    <script>
+
+        // hamburger js
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navList = document.getElementById('nav-list');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navList.classList.toggle('nav-active');
+            // document.body.style.overflow="hidden";
+            mobileMenuBtn.classList.toggle('toggle-animation');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(n => n.addEventListener('click', () => {
+            // document.body.style.overflow="";
+            navList.classList.remove('nav-active');
+        }));
+
+
+
+
+
+        // dropdown js
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const arrow = document.querySelector(".dropdown-arrow");
+            const dropdown = document.querySelector(".dropdown");
+
+            arrow.addEventListener("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdown.classList.toggle("show");
+            });
+
+        });
+
+
+
+
+
+        // hero js
+
+        const scene = document.getElementById('scene');
+        const items = document.querySelectorAll('.grid-item');
+
+        window.addEventListener('mousemove', (e) => {
+            let x = (e.clientX / window.innerWidth) - 0.5;
+            let y = (e.clientY / window.innerHeight) - 0.5;
+
+            items.forEach(item => {
+                let depth = item.getAttribute('data-depth');
+                let moveX = x * (depth * 500);
+                let moveY = y * (depth * 500);
+                item.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+            });
+        });
+
+
+        window.addEventListener('scroll', () => {
+
+            if (window.innerWidth <= 768) return; // Disable on mobile
+
+            const scrollValue = window.scrollY;
+            const bg = document.querySelector('.parallax-bg');
+            const section = document.querySelector('.immersive-experience');
+
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (scrollValue > sectionTop - window.innerHeight && scrollValue < sectionTop + sectionHeight) {
+                const movement = (scrollValue - sectionTop) * 0.15;
+                bg.style.transform = `translateX(${movement}px)`;
+            }
+
+        });
+
+
+
+        // testimonial js
+
+        // Mobile tap expand
+        if (window.innerWidth <= 768) {
+
+            const cards = document.querySelectorAll('.focus-card');
+
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+
+                    cards.forEach(c => c.classList.remove('active'));
+
+                    card.classList.add('active');
+
+                });
+            });
+
+        }
+
+
+        // FAQ js
+
+        document.querySelectorAll('.faq-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const parent = trigger.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+
+
+
+    </script>
 </body>
+
 </html>

@@ -21,6 +21,7 @@
 
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
@@ -32,7 +33,15 @@
 
             <nav class="navbar" id="navbar">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <div>
+                            <a href="index.html" class="nav-link active">Home</a>
+                             <span class="material-icons dorpdown-arrow">arrow_drop_down</span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a href="./home2/index.html">Home Style 2</a></li>
+                        </ul>
+                    </li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="menu.html" class="nav-link">Menu</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -72,7 +81,6 @@
 
 
 
-        <!-- Brief About Section (to show scroll) -->
         <section class="about section" id="about">
             <div class="container about-container">
                 <div class="about-text">
@@ -86,8 +94,7 @@
                 </div>
                 <div class="about-image">
                     <div class="image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Chef preparing dish" />
+                        <img src="Assets/restaurent.webp" alt="Chef preparing dish" />
                     </div>
                 </div>
             </div>
@@ -109,8 +116,7 @@
                 <div class="menu-grid">
                     <div class="menu-card">
                         <div class="menu-img-box">
-                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=600"
-                                alt="Dish Name">
+                            <img src="Assets/salmon 1.webp" alt="Dish Name">
                             <span class="price">$32</span>
                         </div>
                         <div class="menu-info">
@@ -121,8 +127,7 @@
 
                     <div class="menu-card">
                         <div class="menu-img-box">
-                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=600"
-                                alt="Dish Name">
+                            <img src="Assets/ribeye.webp" alt="Dish Name">
                             <span class="price">$45</span>
                         </div>
                         <div class="menu-info">
@@ -133,8 +138,7 @@
 
                     <div class="menu-card">
                         <div class="menu-img-box">
-                            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=600"
-                                alt="Dish Name">
+                            <img src="Assets/risotto.webp" alt="Dish Name">
                             <span class="price">$24</span>
                         </div>
                         <div class="menu-info">
@@ -145,7 +149,7 @@
 
                     <div class="menu-card">
                         <div class="menu-img-box">
-                            <img src="" alt="Spring Asparagus Salad">
+                            <img src="Assets/salad 1.webp" alt="Spring Asparagus Salad">
                             <span class="price">$18</span>
                         </div>
                         <div class="menu-info">
@@ -156,8 +160,7 @@
 
                     <div class="menu-card">
                         <div class="menu-img-box">
-                            <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&q=80&w=600"
-                                alt="Grilled Salmon">
+                            <img src="Assets/salmon 2.webp" alt="Grilled Salmon">
                             <span class="price">$29</span>
                         </div>
                         <div class="menu-info">
@@ -168,8 +171,7 @@
 
                     <div class="menu-card">
                         <div class="menu-img-box">
-                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600"
-                                alt="Watermelon Feta Salad">
+                            <img src="Assets/salad 2.webp" alt="Watermelon Feta Salad">
                             <span class="price">$16</span>
                         </div>
                         <div class="menu-info">
@@ -224,42 +226,34 @@
 
                 <div class="gallery-grid">
                     <div class="gallery-item tall reveal-up">
-                        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&q=80&w=800"
-                            alt="Plating">
+                        <img src="Assets/gallery 7.webp" alt="Plating">
                     </div>
 
                     <div class="gallery-item reveal-up">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
-                            alt="Steak">
-                    </div>ṭ
-
-                    <div class="gallery-item reveal-up">
-                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800"
-                            alt="Sea Food">
+                        <img src="Assets/gallery 1.webp" alt="Steak">
                     </div>
 
                     <div class="gallery-item reveal-up">
-                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800"
-                            alt="Sea Food">
+                        <img src="Assets/gallery 2.webp" alt="Sea Food">
+                    </div>
+
+                    <div class="gallery-item reveal-up">
+                        <img src="Assets/gallery 3.webp" alt="Sea Food">
                     </div>
 
                     <div class="gallery-item wide reveal-up">
-                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=1200"
-                            alt="Ambiance">
+                        <img src="Assets/gallery 4.webp" alt="Ambiance">
                     </div>
 
                     <div class="gallery-item tall reveal-up">
-                        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&q=80&w=800"
-                            alt="Plating">
+                        <img src="Assets/gallery 5.webp" alt="Plating">
                     </div>
                     <div class="gallery-item wide reveal-up">
-                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800"
-                            alt="Sea Food">
+                        <img src="Assets/gallery 6.webp" alt="Sea Food">
                     </div>
 
                     <div class="gallery-item reveal-up">
-                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800"
-                            alt="Sea Food">
+                        <img src="Assets/gallery 8.webp" alt="Sea Food">
                     </div>
                 </div>
             </div>
@@ -280,8 +274,7 @@
                 </div>
 
                 <div class="interactive-menu">
-                    <div class="menu-list-item"
-                        data-img="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=400">
+                    <div class="menu-list-item" data-img="Assets/c seafood.webp">
                         <div class="item-details">
                             <span class="item-cat">Main Course</span>
                             <h3 class="item-name">Roasted Atlantic Cod</h3>
@@ -290,8 +283,7 @@
                         <div class="item-price">$38</div>
                     </div>
 
-                    <div class="menu-list-item"
-                        data-img="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=400">
+                    <div class="menu-list-item" data-img="Assets/c beef.webp">
                         <div class="item-details">
                             <span class="item-cat">Appetizer</span>
                             <h3 class="item-name">Wagyu Beef Carpaccio</h3>
@@ -300,8 +292,7 @@
                         <div class="item-price">$28</div>
                     </div>
 
-                    <div class="menu-list-item"
-                        data-img="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=400">
+                    <div class="menu-list-item" data-img="Assets/c mushroom.webp">
                         <div class="item-details">
                             <span class="item-cat">Vegetarian</span>
                             <h3 class="item-name">Wild Mushroom Tart</h3>
@@ -311,8 +302,7 @@
                     </div>
                 </div>
 
-                <div class="menu-list-item"
-                    data-img="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&q=80&w=400">
+                <div class="menu-list-item" data-img="Assets/c butter.webp">
                     <div class="item-details">
                         <span class="item-cat">Seafood</span>
                         <h3 class="item-name">Garlic Butter Shrimp</h3>
@@ -321,8 +311,7 @@
                     <div class="item-price">$32</div>
                 </div>
 
-                <div class="menu-list-item"
-                    data-img="https://images.unsplash.com/photo-1600891963935-1a7e6b8c9d9c?auto=format&fit=crop&q=80&w=400">
+                <div class="menu-list-item" data-img="Assets/c chops.webp">
                     <div class="item-details">
                         <span class="item-cat">Chef Special</span>
                         <h3 class="item-name">Herb Crusted Lamb Chops</h3>
@@ -331,8 +320,7 @@
                     <div class="item-price">$42</div>
                 </div>
 
-                <div class="menu-list-item"
-                    data-img="https://images.unsplash.com/photo-1548946526-f69e2424cf45?auto=format&fit=crop&q=80&w=400">
+                <div class="menu-list-item" data-img="Assets/c desert.webp">
                     <div class="item-details">
                         <span class="item-cat">Dessert</span>
                         <h3 class="item-name">Classic Tiramisu</h3>
@@ -461,9 +449,9 @@
                 <span class="section-subtitle">Reservations</span>
                 <h2 class="section-title">Ready for an Unforgettable <br> Culinary Experience?</h2>
                 <p>Secure your table for tonight and indulge in the finest flavors.</p>
-                <form class="res-form">
-                    <input type="date" class="form-input">
-                    <select class="form-input">
+                <form class="res-form" action="./404.html" method="GET">
+                    <input type="date" class="form-input" required>
+                    <select class="form-input" required>
                         <option>2 Persons</option>
                         <option>4 Persons</option>
                         <option>6+ Persons</option>
@@ -588,6 +576,22 @@
 
         counters.forEach(counter => {
             statsObserver.observe(counter);
+        });
+
+
+        // dropdown js
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const arrow = document.querySelector(".dropdown-arrow");
+            const dropdown = document.querySelector(".dropdown");
+
+            arrow.addEventListener("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdown.classList.toggle("show");
+            });
+
         });
 
 

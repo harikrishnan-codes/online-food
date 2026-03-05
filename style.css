@@ -1,19 +1,46 @@
+ .dropdown{
+    position: relative;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-arrow {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+     min-width: 180px;
+    display: none;
+}
+
+.dropdown-menu li a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
 
 
-
-
-
-
-
-
-
- /* Hero Section */
  .hero {
      position: relative;
      height: 100vh;
      min-height: 600px;
      display: flex;
-     align-items: center;
+      align-items: center;
      background-size: cover;
      background-position: center;
      background-attachment: fixed;
@@ -46,6 +73,12 @@
      width: 100%;
      height: 100%;
      background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.1) 100%);
+ }
+
+ .hero .container{
+    max-width: 1200px;
+    margin: 20px;
+
  }
 
  .hero-content {
@@ -413,8 +446,7 @@
      margin-bottom: 0.3rem;
  }
 
- /* Hover Effects */
- .menu-list-item:hover .item-name {
+  .menu-list-item:hover .item-name {
      color: var(--primary-color);
      transform: translateX(10px);
  }
@@ -424,8 +456,7 @@
      opacity: 0.5;
  }
 
- /* Floating Reveal Element */
- .hover-reveal {
+  .hover-reveal {
      position: fixed;
      width: 250px;
      height: 320px;
@@ -644,14 +675,7 @@
 
 
 
- /* .booking {
-    padding: 8rem 0 2rem;
-    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), 
-                url('./Assets/hero\ 1.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-} */
+ 
 
  .reservation-box {
      background: var(--surface-color);
@@ -670,13 +694,14 @@
  }
 
  .form-input {
-     background: transparent;
+     background: var(--surface-color);
      border: 1px solid var(--border-color);
      padding: 1rem;
      color: var(--text-main);
      border-radius: 4px;
      font-family: var(--font-body);
      outline: none;
+
  }
 
  .form-input:focus {
